@@ -1,0 +1,332 @@
+/* cover block 1 */
+.backVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  z-index: -1;
+  opacity: 0.4;
+}
+@media screen and (max-width:768px) {
+.backVideo {
+  height: 100vh;
+  width: auto;
+}
+}
+.cB1 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+.cB1 .contenu {
+  width: 75%;
+  text-align: center;
+}
+.cB1 .contenu h1 {
+  margin-bottom: 1rem;
+  font-family: "font-1";
+  font-size: var(--big-font-size);
+}
+.cB1 .contenu p {
+  margin-bottom: 2rem;
+}
+.cB1 .contenu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: var(--color1);
+  border-radius: 30px;
+  border: 1px solid var(--color1);
+  transition: all 0.3s ease-in-out;
+}
+.cB1 .contenu a:hover {
+  background-color: transparent;
+}
+
+/* service block 2 */
+.sB2 {
+  color: #fff;
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem 2rem;
+}
+.sB2 .intro {
+  width: 95%;
+  text-align: center;
+  margin: auto auto;
+}
+.sB2 .intro h1 {
+  margin-bottom: 1rem;
+}
+.sB2 .sb-content {
+  display: grid;
+  gap: 1rem;
+}
+.sB2 .service {
+  text-align: center;
+  padding: 2rem;
+}
+.sB2 .service img {
+  width: 64px;
+  height: 64px;
+}
+.sB2 .service h2 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.sB2 .intro p {
+  margin-bottom: 2rem;
+}
+.sB2 .intro a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: var(--color1);
+  border-radius: 30px;
+  border: 1px solid var(--color1);
+  transition: all 0.3s ease-in-out;
+}
+.sB2 .intro a:hover {
+  background-color: transparent;
+  color: var(--color1);
+}
+@media screen and (min-width: 768px) {
+  .sB2 {
+    padding: 2rem 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sB2 .sb-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sB2 .intro {
+    width: 75%;
+    margin: auto 0;
+    text-align: start;
+  }
+}
+/* faq block */
+.container {
+  max-width: 968px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+.section__title-center {
+  text-align: center;
+}
+.questions {
+  background-color: var(--color2);
+}
+
+.questions__container {
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.questions__group {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.questions__item {
+  background-color: var(--color1-1);
+  border-radius: 0.25rem;
+}
+
+.questions__item-title {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.questions__icon {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.questions__description {
+  font-size: var(--smaller-font-size);
+  padding: 0 1.25rem 1.25rem 2.5rem;
+}
+
+.questions__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 0.5rem;
+  padding: 0.75rem 0.5rem;
+  cursor: pointer;
+}
+
+.questions__content {
+  overflow: hidden;
+  height: 0;
+}
+
+.questions__item,
+.questions__header,
+.questions__item-title,
+.questions__icon,
+.questions__description,
+.questions__content {
+  transition: 0.3s;
+}
+
+.questions__item:hover {
+  box-shadow: 0 2px 8px var(--color2);
+}
+
+/*Rotate icon, change color of titles and background*/
+.accordion-open .questions__header,
+.accordion-open .questions__content {
+  background-color: var(--first-color);
+}
+
+.accordion-open .questions__item-title,
+.accordion-open .questions__description,
+.accordion-open .questions__icon {
+  color: #fff;
+}
+
+.accordion-open .questions__icon {
+  transform: rotate(45deg);
+  filter: invert(1);
+}
+@media screen and (min-width: 767px) {
+  .questions__container {
+    align-items: flex-start;
+  }
+  .questions__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*=============== NEWSLETTER ===============*/
+.section__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-2);
+  text-align: center;
+}
+.newsletter {
+  color: #fff;
+}
+.newsletter__description {
+  text-align: center;
+  margin-bottom: var(--mb-1-5);
+}
+
+.newsletter__form {
+  background: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.75rem;
+}
+
+.newsletter__input {
+  width: 70%;
+  padding: 0 0.5rem;
+  background: none;
+  color: #000;
+}
+
+.newsletter__input::placeholder {
+  color: var(--text-color);
+}
+.button {
+  display: inline-block;
+  background-color: var(--color1);
+  color: #fff;
+  padding: 1rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  transition: 0.3s;
+}
+button,
+input {
+  border: none;
+  outline: none;
+}
+@media screen and (min-width: 767px) {
+  .newsletter__container {
+    grid-template-columns: 0.5fr;
+  }
+}
+@media screen and (min-width: 576px) {
+  .newsletter__container {
+    display: grid;
+    grid-template-columns: 0.7fr;
+    justify-content: center;
+  }
+}
+/* animation */
+
+.cB1 .contenu {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.cB1.active .contenu {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.head-area {
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.head-area.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.sB2 .intro {
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.sB2.active .intro {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.service {
+  transform: translateX(200px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.service.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.questions {
+  transform: scale(0);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.questions.active {
+  transform: scale(1);
+  opacity: 1;
+}
+.newsletter {
+  transform: scale(1.5);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.newsletter.active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+

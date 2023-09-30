@@ -1,0 +1,125 @@
+/* cover block 3 */
+.cB3 {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  gap: 2rem;
+}
+.cB3 .contenu {
+  padding: 2rem 2rem;
+  text-align: start;
+  float: left;
+  width: 100%;
+}
+.cB3 img {
+  width: 100%;
+}
+.cB3 .contenu h1 {
+  margin-bottom: 1rem;
+}
+.cB3 .contenu p {
+  margin-bottom: 2rem;
+}
+.cB3 .contenu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: #8739fa;
+  border-radius: 30px;
+  border: 1px solid #8739fa;
+  transition: all 0.3s ease-in-out;
+}
+.cB3 .contenu a:hover {
+  background-color: transparent;
+  color: #8739fa;
+}
+@media screen and (min-width: 768px) {
+  .cB3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cB3 img {
+    height: 100vh;
+  }
+  .topcB {
+    margin-top: 0rem !important;
+  }
+  .ct2 {
+    order: 1;
+  }
+}
+
+.topcB {
+  margin-top: 5rem !important;
+}
+/* animation */
+#sec1 .contenu {
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+#sec1.active .contenu {
+  opacity: 1;
+  transform: translateX(0px);
+}
+#sec1 img {
+  transform: translateX(200px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+#sec1.active img {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+#sec2 .contenu {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+#sec2.active .contenu {
+  opacity: 1;
+  transform: translateY(0px);
+}
+#sec2 img {
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+#sec2.active img {
+  opacity: 1;
+  transform: translateY(0px);
+}
+img{
+  object-fit: contain;
+}
+
+#sec3 {
+  transform: scale(0);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+#sec3.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#sec4 .contenu {
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+#sec4.active .contenu {
+  opacity: 1;
+  transform: translateY(0px);
+}
+#sec4 img {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+#sec4.active img {
+  opacity: 1;
+  transform: translateY(0px);
+}
